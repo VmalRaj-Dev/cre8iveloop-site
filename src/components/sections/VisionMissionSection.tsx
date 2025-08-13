@@ -6,14 +6,14 @@ export const VisionMissionSection = () => {
     <section className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-          <Card className="bg-gradient-secondary border-border hover:border-primary/30 transition-all duration-500 group animate-slide-in-left">
+          <Card className="bg-gradient-secondary border-border hover:border-accent/30 transition-all duration-500 group animate-slide-in-left">
             <CardContent className="p-10">
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mr-6 group-hover:shadow-glow transition-all duration-500">
-                  <Eye className="w-8 h-8 text-primary-foreground" />
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mr-6 border border-border group-hover:border-accent/50 transition-all duration-500">
+                  <Eye className="w-8 h-8 text-foreground" />
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  Our <span className="bg-gradient-primary bg-clip-text text-transparent">Vision</span>
+                  Our Vision
                 </h2>
               </div>
               
@@ -24,14 +24,14 @@ export const VisionMissionSection = () => {
             </CardContent>
           </Card>
 
-          <Card className="bg-gradient-secondary border-border hover:border-primary/30 transition-all duration-500 group animate-slide-in-right">
+          <Card className="bg-gradient-secondary border-border hover:border-accent/30 transition-all duration-500 group animate-slide-in-right">
             <CardContent className="p-10">
               <div className="flex items-center mb-8">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mr-6 group-hover:shadow-glow transition-all duration-500">
-                  <Target className="w-8 h-8 text-primary-foreground" />
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mr-6 border border-border group-hover:border-accent/50 transition-all duration-500">
+                  <Target className="w-8 h-8 text-foreground" />
                 </div>
                 <h2 className="text-3xl md:text-4xl font-bold text-foreground">
-                  Our <span className="bg-gradient-primary bg-clip-text text-transparent">Mission</span>
+                  Our Mission
                 </h2>
               </div>
               

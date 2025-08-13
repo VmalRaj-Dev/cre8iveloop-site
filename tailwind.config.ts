@@ -55,10 +55,11 @@ export default {
 			},
 			backgroundImage: {
 				'gradient-primary': 'var(--gradient-primary)',
-				'gradient-secondary': 'var(--gradient-secondary)'
+				'gradient-secondary': 'var(--gradient-secondary)',
+				'gradient-accent': 'var(--gradient-accent)'
 			},
 			boxShadow: {
-				'glow': 'var(--glow-primary)',
+				'glow-accent': 'var(--glow-accent)',
 				'glow-soft': 'var(--glow-soft)',
 				'elevated': 'var(--shadow-elevated)'
 			},

@@ -37,7 +37,7 @@ export const Navigation = () => {
     }`}>
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-2xl font-bold bg-gradient-primary bg-clip-text text-transparent">
+          <div className="text-2xl font-bold text-foreground">
             Cre8iveloop
           </div>
 
@@ -47,15 +47,15 @@ export const Navigation = () => {
               <button
                 key={item.id}
                 onClick={() => scrollToSection(item.id)}
-                className="text-foreground hover:text-primary transition-colors duration-300 relative group"
+                className="text-foreground hover:text-accent transition-colors duration-300 relative group"
               >
                 {item.name}
-                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300 group-hover:w-full"></span>
+                <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-accent transition-all duration-300 group-hover:w-full"></span>
               </button>
             ))}
             <Button 
               onClick={() => scrollToSection("contact")}
-              className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
+              className="bg-primary text-primary-foreground hover:bg-accent hover:shadow-glow-accent transition-all duration-300"
             >
               Get Started
             </Button>
@@ -63,7 +63,7 @@ export const Navigation = () => {
 
           {/* Mobile Menu Button */}
           <button
-            className="md:hidden text-foreground hover:text-primary transition-colors"
+            className="md:hidden text-foreground hover:text-accent transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           >
             {isMobileMenuOpen ? <X size={24} /> : <Menu size={24} />}
@@ -78,14 +78,14 @@ export const Navigation = () => {
                 <button
                   key={item.id}
                   onClick={() => scrollToSection(item.id)}
-                  className="text-foreground hover:text-primary transition-colors duration-300 text-left"
+                  className="text-foreground hover:text-accent transition-colors duration-300 text-left"
                 >
                   {item.name}
                 </button>
               ))}
               <Button 
                 onClick={() => scrollToSection("contact")}
-                className="bg-gradient-primary hover:shadow-glow transition-all duration-300 w-fit"
+                className="bg-primary text-primary-foreground hover:bg-accent hover:shadow-glow-accent transition-all duration-300 w-fit"
               >
                 Get Started
               </Button>

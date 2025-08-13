@@ -41,8 +41,7 @@ export const ClientsSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-            <span className="text-foreground">Who </span>
-            <span className="bg-gradient-primary bg-clip-text text-transparent">We Serve</span>
+            <span className="text-foreground">Who We Serve</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Our diverse clientele spans across industries, bringing tailored solutions to every sector.
@@ -53,14 +52,14 @@ export const ClientsSection = () => {
           {clientTypes.map((client, index) => (
             <Card 
               key={client.title}
-              className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 group animate-fade-in"
+              className="bg-card/50 backdrop-blur-sm border-border hover:border-accent/30 transition-all duration-500 group animate-fade-in"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <CardContent className="p-8">
-                <div className="w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mb-6 group-hover:shadow-glow transition-all duration-500">
-                  <client.icon className="w-8 h-8 text-primary-foreground" />
+                <div className="w-16 h-16 bg-secondary rounded-full flex items-center justify-center mb-6 border border-border group-hover:border-accent/50 transition-all duration-500">
+                  <client.icon className="w-8 h-8 text-foreground" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-primary transition-colors duration-300">
+                <h3 className="text-xl font-bold mb-4 text-foreground group-hover:text-accent transition-colors duration-300">
                   {client.title}
                 </h3>
                 <p className="text-muted-foreground">

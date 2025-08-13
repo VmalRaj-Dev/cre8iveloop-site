@@ -36,8 +36,7 @@ export const ContactSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-            <span className="text-foreground">Let's Build </span>
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Something Together</span>
+            <span className="text-foreground">Let's Build Something Together</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             Ready to transform your ideas into impactful designs? Get in touch with us today.
@@ -47,11 +46,11 @@ export const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
           {/* Contact Information */}
           <div className="space-y-8 animate-slide-in-left">
-            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-accent/30 transition-all duration-500 group">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mr-4 group-hover:shadow-glow transition-all duration-500">
-                    <Mail className="w-6 h-6 text-primary-foreground" />
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 border border-border group-hover:border-accent/50 transition-all duration-500">
+                    <Mail className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Email</h3>
@@ -61,11 +60,11 @@ export const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-accent/30 transition-all duration-500 group">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mr-4 group-hover:shadow-glow transition-all duration-500">
-                    <Phone className="w-6 h-6 text-primary-foreground" />
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 border border-border group-hover:border-accent/50 transition-all duration-500">
+                    <Phone className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Phone</h3>
@@ -75,11 +74,11 @@ export const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-accent/30 transition-all duration-500 group">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mr-4 group-hover:shadow-glow transition-all duration-500">
-                    <Globe className="w-6 h-6 text-primary-foreground" />
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 border border-border group-hover:border-accent/50 transition-all duration-500">
+                    <Globe className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Website</h3>
@@ -89,11 +88,11 @@ export const ContactSection = () => {
               </CardContent>
             </Card>
 
-            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-primary/50 transition-all duration-500 group">
+            <Card className="bg-card/50 backdrop-blur-sm border-border hover:border-accent/30 transition-all duration-500 group">
               <CardContent className="p-8">
                 <div className="flex items-center mb-6">
-                  <div className="w-12 h-12 bg-gradient-primary rounded-full flex items-center justify-center mr-4 group-hover:shadow-glow transition-all duration-500">
-                    <MapPin className="w-6 h-6 text-primary-foreground" />
+                  <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center mr-4 border border-border group-hover:border-accent/50 transition-all duration-500">
+                    <MapPin className="w-6 h-6 text-foreground" />
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Address</h3>
@@ -114,7 +113,7 @@ export const ContactSection = () => {
                     placeholder="Your Name"
                     value={formData.name}
                     onChange={handleInputChange}
-                    className="bg-input/50 border-border focus:border-primary transition-colors duration-300"
+                    className="bg-input/50 border-border focus:border-accent transition-colors duration-300"
                     required
                   />
                 </div>
@@ -126,7 +125,7 @@ export const ContactSection = () => {
                     placeholder="Your Email"
                     value={formData.email}
                     onChange={handleInputChange}
-                    className="bg-input/50 border-border focus:border-primary transition-colors duration-300"
+                    className="bg-input/50 border-border focus:border-accent transition-colors duration-300"
                     required
                   />
                 </div>
@@ -137,7 +136,7 @@ export const ContactSection = () => {
                     placeholder="Your Phone"
                     value={formData.phone}
                     onChange={handleInputChange}
-                    className="bg-input/50 border-border focus:border-primary transition-colors duration-300"
+                    className="bg-input/50 border-border focus:border-accent transition-colors duration-300"
                   />
                 </div>
                 
@@ -147,14 +146,14 @@ export const ContactSection = () => {
                     placeholder="Your Message"
                     value={formData.message}
                     onChange={handleInputChange}
-                    className="bg-input/50 border-border focus:border-primary transition-colors duration-300 min-h-32"
+                    className="bg-input/50 border-border focus:border-accent transition-colors duration-300 min-h-32"
                     required
                   />
                 </div>
                 
                 <Button 
                   type="submit"
-                  className="w-full bg-gradient-primary hover:shadow-glow transition-all duration-500 group"
+                  className="w-full bg-primary text-primary-foreground hover:bg-accent hover:shadow-glow-accent transition-all duration-500 group"
                   size="lg"
                 >
                   Send Message

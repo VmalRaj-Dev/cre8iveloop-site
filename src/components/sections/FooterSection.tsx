@@ -19,7 +19,7 @@ export const FooterSection = () => {
         <div className="grid md:grid-cols-4 gap-8 mb-12">
           {/* Brand */}
           <div className="md:col-span-2">
-            <div className="text-3xl font-bold bg-gradient-primary bg-clip-text text-transparent mb-4">
+            <div className="text-3xl font-bold text-foreground mb-4">
               Cre8iveloop
             </div>
             <p className="text-muted-foreground mb-6 max-w-md">
@@ -27,16 +27,16 @@ export const FooterSection = () => {
               and visual branding solutions that empower businesses and campaigns.
             </p>
             <div className="flex space-x-4">
-              <Button size="sm" variant="outline" className="border-border hover:border-primary">
+              <Button size="sm" variant="outline" className="border-border hover:border-accent">
                 <Facebook className="w-4 h-4" />
               </Button>
-              <Button size="sm" variant="outline" className="border-border hover:border-primary">
+              <Button size="sm" variant="outline" className="border-border hover:border-accent">
                 <Twitter className="w-4 h-4" />
               </Button>
-              <Button size="sm" variant="outline" className="border-border hover:border-primary">
+              <Button size="sm" variant="outline" className="border-border hover:border-accent">
                 <Instagram className="w-4 h-4" />
               </Button>
-              <Button size="sm" variant="outline" className="border-border hover:border-primary">
+              <Button size="sm" variant="outline" className="border-border hover:border-accent">
                 <Linkedin className="w-4 h-4" />
               </Button>
             </div>
@@ -48,25 +48,25 @@ export const FooterSection = () => {
             <div className="space-y-2">
               <button 
                 onClick={() => scrollToSection("hero")}
-                className="block text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="block text-muted-foreground hover:text-accent transition-colors duration-300"
               >
                 Home
               </button>
               <button 
                 onClick={() => scrollToSection("about")}
-                className="block text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="block text-muted-foreground hover:text-accent transition-colors duration-300"
               >
                 About
               </button>
               <button 
                 onClick={() => scrollToSection("services")}
-                className="block text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="block text-muted-foreground hover:text-accent transition-colors duration-300"
               >
                 Services
               </button>
               <button 
                 onClick={() => scrollToSection("contact")}
-                className="block text-muted-foreground hover:text-primary transition-colors duration-300"
+                className="block text-muted-foreground hover:text-accent transition-colors duration-300"
               >
                 Contact
               </button>
@@ -90,11 +90,11 @@ export const FooterSection = () => {
             © 2021–2025 Cre8iveloop. All Rights Reserved.
           </p>
           
-          <Button 
-            onClick={scrollToTop}
-            size="sm"
-            className="bg-gradient-primary hover:shadow-glow transition-all duration-300"
-          >
+            <Button 
+              onClick={scrollToTop}
+              size="sm"
+              className="bg-primary text-primary-foreground hover:bg-accent hover:shadow-glow-accent transition-all duration-300"
+            >
             <ArrowUp className="w-4 h-4 mr-2" />
             Back to Top
           </Button>

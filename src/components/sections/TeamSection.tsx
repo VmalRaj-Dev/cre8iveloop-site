@@ -42,8 +42,7 @@ export const TeamSection = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-6 animate-fade-in">
-            <span className="text-foreground">Meet Our </span>
-            <span className="bg-gradient-primary bg-clip-text text-transparent">Creative Team</span>
+            <span className="text-foreground">Meet Our Creative Team</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto animate-fade-in" style={{ animationDelay: '0.2s' }}>
             The passionate minds behind every creative solution we deliver.
@@ -73,25 +72,25 @@ export const TeamSection = () => {
                 <Card className={`
                   bg-gradient-secondary border-border transition-all duration-500 cursor-pointer
                   ${hoveredMember === member.id 
-                    ? 'scale-125 border-primary shadow-glow-soft' 
-                    : 'hover:scale-110 hover:border-primary/50'
+                    ? 'scale-125 border-accent shadow-glow-soft' 
+                    : 'hover:scale-110 hover:border-accent/50'
                   }
                   ${hoveredMember && hoveredMember !== member.id ? 'opacity-50 scale-90' : ''}
                 `}>
                   <CardContent className="p-6 text-center w-48">
                     <div className={`
-                      w-16 h-16 bg-gradient-primary rounded-full flex items-center justify-center mx-auto mb-4 
+                      w-16 h-16 bg-secondary rounded-full flex items-center justify-center mx-auto mb-4 border border-border
                       transition-all duration-500
-                      ${hoveredMember === member.id ? 'shadow-glow' : ''}
+                      ${hoveredMember === member.id ? 'border-accent/50' : ''}
                     `}>
-                      <User className="w-8 h-8 text-primary-foreground" />
+                      <User className="w-8 h-8 text-foreground" />
                     </div>
                     
                     <h3 className="text-lg font-bold text-foreground mb-2">
                       {member.name}
                     </h3>
                     
-                    <p className="text-primary text-sm mb-3 font-medium">
+                    <p className="text-accent text-sm mb-3 font-medium">
                       {member.designation}
                     </p>
                     
@@ -108,8 +107,8 @@ export const TeamSection = () => {
 
           {/* Central logo/brand element */}
           <div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            <div className="w-24 h-24 bg-gradient-primary rounded-full flex items-center justify-center shadow-glow animate-glow-pulse">
-              <span className="text-2xl font-bold text-primary-foreground">C8L</span>
+            <div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center border-2 border-accent/20 animate-glow-pulse">
+              <span className="text-2xl font-bold text-foreground">C8L</span>
             </div>
           </div>
         </div>
