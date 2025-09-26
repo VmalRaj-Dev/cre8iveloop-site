@@ -5,7 +5,7 @@ import ashokChandran from "@/assets/ashok-chandran.jpg";
 import adheeshKumar from "@/assets/adheesh.jpg";
 import vimalRaj from "@/assets/vimal-raj.jpg";
 import lokesh from "@/assets/lokesh.jpg";
-import logoSmall from "@/assets/logo-small.jpg";
+import logoSmall from "@/assets/logo-small.png";
 
 // Placeholder team data - will be replaced with actual team member images and details
 const teamMembers = [

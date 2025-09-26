@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import logo from "@/assets/logo.png";
-import logoSmall from "@/assets/logo-small.jpg"; // Add this import
+import logoSmall from "@/assets/logo-small.png"; // Add this import
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -44,13 +44,13 @@ export const Navigation = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-16 w-52 p-3 mr-2 bg-white hidden md:inline-block"
+              className="h-16 w-52 p-3 mr-2 hidden md:inline-block"
             />
             {/* Mobile logo */}
             <img
               src={logoSmall}
               alt="Logo Small"
-              className="h-12 w-12 p-2 inline-block mr-2 bg-white md:hidden"
+              className="h-12 w-12 p-2 inline-block mr-2 md:hidden"
             />
           </div>
 
