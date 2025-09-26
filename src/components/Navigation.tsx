@@ -44,13 +44,13 @@ export const Navigation = () => {
             <img
               src={logo}
               alt="Logo"
-              className="h-16 w-52 p-3 mr-2 hidden md:inline-block"
+              className="h-20 w-72 p-3 mr-2 hidden md:inline-block"
             />
             {/* Mobile logo */}
             <img
               src={logoSmall}
               alt="Logo Small"
-              className="h-12 w-12 p-2 inline-block mr-2 md:hidden"
+              className="h-8 w-16 p-2 inline-block mr-2 md:hidden"
             />
           </div>
 

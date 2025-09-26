@@ -145,7 +145,7 @@ export const TeamSection = () => {
 					{/* Central logo/brand element */}
 					<div className="absolute left-1/2 top-1/2 transform -translate-x-1/2 -translate-y-1/2">
 						<div className="w-24 h-24 bg-secondary rounded-full flex items-center justify-center border-2 border-accent/20 animate-glow-pulse">
-							<span className="text-2xl font-bold text-foreground"><img src={logoSmall} alt="Logo" className="h-6 w-6"/></span>
+							<span className="text-2xl font-bold text-foreground"><img src={logoSmall} alt="Logo" className="h-8 w-14"/></span>
 						</div>
 					</div>
 				</div>
