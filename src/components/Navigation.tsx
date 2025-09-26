@@ -50,7 +50,7 @@ export const Navigation = () => {
             <img
               src={logoSmall}
               alt="Logo Small"
-              className="h-16 w-16 p-2 inline-block mr-2 md:hidden"
+              className="h-12 w-16 p-2 inline-block mr-2 md:hidden"
             />
           </div>
 
