@@ -54,7 +54,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Email</h3>
-                    <p className="text-muted-foreground">[Insert Email]</p>
+                    <p className="text-muted-foreground">Cre8iveloop@gmail.com</p>
                   </div>
                 </div>
               </CardContent>
@@ -68,7 +68,7 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Phone</h3>
-                    <p className="text-muted-foreground">[Insert Phone]</p>
+                    <p className="text-muted-foreground">9600861242</p>
                   </div>
                 </div>
               </CardContent>
@@ -96,7 +96,9 @@ export const ContactSection = () => {
                   </div>
                   <div>
                     <h3 className="text-xl font-bold text-foreground">Address</h3>
-                    <p className="text-muted-foreground">[Insert Office Address]</p>
+                    <p className="text-muted-foreground">1/175 amman nagar, 
+                      mettupalayam, 
+                      coimbatore - 641305</p>
                   </div>
                 </div>
               </CardContent>

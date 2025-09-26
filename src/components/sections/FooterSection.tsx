@@ -77,8 +77,8 @@ export const FooterSection = () => {
           <div>
             <h3 className="text-lg font-bold text-foreground mb-4">Contact</h3>
             <div className="space-y-2 text-muted-foreground">
-              <p>Email: [Insert Email]</p>
-              <p>Phone: [Insert Phone]</p>
+              <p>Email: Cre8iveloop@gmail.com</p>
+              <p>Phone: 9600861242</p>
               <p>www.cre8iveloop.com</p>
             </div>
           </div>

@@ -1,6 +1,8 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
+import logoSmall from "@/assets/logo-small.jpg"; // Add this import
 
 export const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -38,7 +40,18 @@ export const Navigation = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="text-2xl font-bold text-foreground">
-            Cre8iveloop
+            {/* Desktop logo */}
+            <img
+              src={logo}
+              alt="Logo"
+              className="h-16 w-52 p-3 mr-2 bg-white hidden md:inline-block"
+            />
+            {/* Mobile logo */}
+            <img
+              src={logoSmall}
+              alt="Logo Small"
+              className="h-12 w-12 p-2 inline-block mr-2 bg-white md:hidden"
+            />
           </div>
 
           {/* Desktop Navigation */}
